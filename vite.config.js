@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react'
 dotenv.config();
 
 export default defineConfig({
-  base: "/",
+  base: "/goit-project-final-so-yummy-fe",
   plugins: [react()],
   // define: {
   //   'process.env': process.env
