@@ -1,38 +1,40 @@
 import { NavLink } from "react-router-dom";
-import css from "./Navigation.module.css";
 
+import routes from "../../constants/routes";
 import SearchIcon from '../IconsSVG/SearchIcon'
+
+import css from "./Navigation.module.css";
 
 const Navigation = () => {
   return (
     <ul className={css.navList}>
       <li>
-        <NavLink className={css.link} to='/categories/:categoryName'>
+        <NavLink className={css.link} to={`/${routes.CATEGORIES}/Breakfast`}>
           Categories
         </NavLink>
       </li>
       <li>
-        <NavLink className={css.link} to='/add'>
+        <NavLink className={css.link} to={`/${routes.ADD}`}>
           Add recipes
         </NavLink>
       </li>
       <li>
-        <NavLink className={css.link} to='/my'>
+        <NavLink className={css.link} to={`/${routes.MY}`}>
           My recipes
         </NavLink>
       </li>
       <li>
-        <NavLink className={css.link} to='/favorite'>
-          Favorites
+        <NavLink className={css.link} to={`/${routes.FAVORITE}`}>
+          Favourites
         </NavLink>
       </li>
       <li>
-        <NavLink className={css.link} to='/shopping-list'>
+        <NavLink className={css.link} to={`/${routes.SHOPPING_LIST}`}>
           Shopping list
         </NavLink>
       </li>
       <li>
-        <NavLink className={css.link} to='/search'>
+        <NavLink className={css.link} to={`/${routes.SEARCH}`}>
           <SearchIcon />
         </NavLink>
       </li>
