@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Provider store={store}>
       {/* <PersistGate loading={null} persistor={persistor}> */}
       <PersistGate persistor={persistor}>
-        <BrowserRouter basename='/'>
+        <BrowserRouter basename='/goit-project-final-so-yummy-FE'>
           <App />
         </BrowserRouter>
       </PersistGate>
