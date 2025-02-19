@@ -5,12 +5,12 @@ import react from '@vitejs/plugin-react'
 dotenv.config();
 
 export default defineConfig({
-  base: "/goit-project-final-so-yummy-fe",
+  base: "",
   plugins: [react()],
   // define: {
   //   'process.env': process.env
   // }
-  build: {
-    sourcemap: true
-  }
+  // build: {
+  //   sourcemap: true
+  // }
 });
